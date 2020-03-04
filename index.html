@@ -1,56 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            display: flex;
-            justify-content: space-between;
-            margin: 0;
-        }
-        .child{
-            background-color: green;
-            width: 100%;
-        }
-        .left{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-grow: 7;            
-            height: 100vh;
-            background-color: black;
-        }
-        .right{
-            flex-grow: 2;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            width: 50px;
-            height: 100vh;
-            background-color: black;
-        }
-        #video{
-            width: 100%;
-            height: 90vh;
-        }
-    </style>
-</head>
-<body>
-    <div class="left">
-        <iframe src="video1.html" frameborder="0" id="video" name="vd"></iframe>
-    </div>
-    <div class="right">
-        <a href="video1.html" target="vd">
-            <img src="avt1.jpg" alt="" class="child">
-        </a>
-        <a href="video2.html" target="vd">
-            <img src="avt2.jpg" alt="" class="child">
-        </a>
-        <a href="video3.html" target="vd">
-            <img src="avt3.jpg" alt="" class="child">
-        </a>
-    </div>
-</body>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>lab9.html</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="1.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+    <from>
+        <label> User Name:</label><br>
+        <input name="id"type="text"/><br>
+        <label>Pass Word:</label><br>
+        <input name="pw"type="password"/><br>
+        <label>
+            <input name ="re"type="checkbox"/>
+            Remember me?
+        </label>
+        <hr>
+        <button>Login</button>    
+    </from>
+    </body>
 </html>
